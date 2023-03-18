@@ -1,4 +1,4 @@
 {
   "jwtPrivateKey": "vidly_jwtPrivateKey",
-  "db": "movielibrary_db"
+  "db": "vidly_db"
 }

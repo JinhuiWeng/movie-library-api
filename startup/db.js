@@ -4,8 +4,6 @@ const config = require("config");
 
 
 module.exports = function () {
-  const db = config.get("db");
-  console.log(process.env.MONGODB_URL);
 
   mongoose
     .connect(process.env.MONGODB_URL, {
@@ -17,7 +15,4 @@ module.exports = function () {
     )
     .catch((err) => console.error("Error connecting to mongo", err));
 
-  // mongoose
-  //   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
-  //   .then(() => winston.info(`Connected to ${db}...`));
 };
